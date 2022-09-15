@@ -1,0 +1,26 @@
+Decathlon Application
+# Decathlon application reads data from csv file.
+# Can be extended to read from any time of file by adding corresponding input reader.
+# It then calculates the scoring points of participants.
+# It ranks the participants based on total score obtained.
+# Finally it writes the output in xml file .
+# Can be extended to write to any type of file by adding corresponding writer.
+
+
+#Build an application and run unit test cases
+
+mvn clean install
+
+#Run application
+    #If running from command line
+        # go to target folder and run below command
+        # Application takes one command line input. Specify the complete path of input file. One sample command is given below
+
+java -cp decathlon-1.0-SNAPSHOT.jar com.kuehne.nagel.sport.DecathlonApplication "C:\Users\powars\Downloads\results.csv"
+
+    # If running from IDE
+    # mention input file path in program arguments
+      Run DecathlonApplication main class
+
+# Output
+out put will be generated as xml file in the same folder as that of input file.
